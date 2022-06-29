@@ -1,1 +1,123 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;0,400;0,700;1,400&family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+  text-transform: capitalize;
+  font-family: "Exo", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: hidden;
+  background: #333;
+  color: white;
+}
+
+header {
+  padding: 1.5rem 2.5rem;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .fa-bars {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+header .container a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.5rem;
+  display: inline;
+}
+header .container a i {
+  padding: 0.5rem;
+}
+header .container .right {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+header .container .right .search-container {
+  display: inline;
+  position: relative;
+}
+header .container .right .search-container input {
+  position: absolute;
+  top: -1.5rem;
+  right: 0.8rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+}
+header .container .right .search-container input:hover, header .container .right .search-container input:focus {
+  width: 25rem;
+}
+header .container .right .search-container label {
+  position: absolute;
+  top: -0.7rem;
+  left: -3.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1;
+  color: #333;
+}
+header .container .right .search-container label:hover ~ label {
+  width: 25rem;
+}
+header .navbar {
+  position: fixed;
+  z-index: 1000;
+  top: 0rem;
+  left: 0rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  height: 100vh;
+  width: 30vw;
+  display: none;
+}
+header .navbar ul {
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  place-content: center;
+}
+header .navbar ul li {
+  margin-bottom: 1rem;
+}
+header .navbar ul li a {
+  text-decoration: none;
+  background-color: white;
+  color: #333;
+  padding: 0.8rem 3.5rem;
+  border-radius: 5rem;
+  font-size: 1.4rem;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 4rem;
+}
+header .navbar ul li a:hover {
+  text-decoration: none;
+  background: #EB4D4B;
+  letter-spacing: 0.3rem;
+  color: #fff;
+}
+
+.fa-xmark {
+  color: white;
+  z-index: 1001;
+  position: absolute;
+  left: 25rem;
+  font-size: 5rem;
+  display: block;
+}/*# sourceMappingURL=style.css.map */
