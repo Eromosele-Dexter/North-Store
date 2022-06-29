@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;0,400;0,700;1,400&family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary-colour: #333;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +19,7 @@ html {
 
 body {
   overflow: hidden;
-  background: #333;
+  background: var(--primary-colour);
   color: white;
 }
 
@@ -31,13 +35,14 @@ header .container .fa-bars {
   font-size: 2.5rem;
   cursor: pointer;
 }
-header .container a {
+header .container .logo {
   text-decoration: none;
   color: white;
+  font-weight: bold;
   font-size: 2.5rem;
   display: inline;
 }
-header .container a i {
+header .container .logo i {
   padding: 0.5rem;
 }
 header .container .right {
@@ -70,7 +75,7 @@ header .container .right .search-container label {
   font-size: 2rem;
   cursor: pointer;
   z-index: 1;
-  color: #333;
+  color: var(--primary-colour);
 }
 header .container .right .search-container label:hover ~ label {
   width: 25rem;
@@ -81,19 +86,23 @@ header .navbar {
   top: 0rem;
   left: 0rem;
   background-color: rgba(0, 0, 0, 0.9);
-  padding: 1rem;
+  padding: 0rem;
   height: 100vh;
-  width: 30vw;
+  width: 100vw;
   display: none;
 }
 header .navbar ul {
   list-style: none;
   display: flex;
   flex-flow: column;
-  place-content: center;
+  height: 100%;
+  width: 35rem;
+  background-color: var(--primary-colour);
+  justify-content: center;
+  padding: 1.5rem;
 }
 header .navbar ul li {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 header .navbar ul li a {
   text-decoration: none;
@@ -105,19 +114,66 @@ header .navbar ul li a {
   text-align: center;
   font-size: 2rem;
   line-height: 4rem;
+  display: block;
 }
 header .navbar ul li a:hover {
   text-decoration: none;
   background: #EB4D4B;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.15rem;
   color: #fff;
 }
 
 .fa-xmark {
-  color: white;
   z-index: 1001;
-  position: absolute;
-  left: 25rem;
-  font-size: 5rem;
-  display: block;
+  transform: translateX(27rem);
+}
+
+@media only screen and (min-width: 1480px) {
+  header {
+    padding: 0rem 2rem;
+  }
+  header .container {
+    width: 1400px;
+    margin: 0 auto;
+  }
+  header .fa-bars {
+    display: none;
+  }
+  header .navbar {
+    position: unset;
+    z-index: 1000;
+    top: 0rem;
+    left: 0rem;
+    background-color: none;
+    height: unset;
+    width: unset;
+    display: block;
+  }
+  header .navbar ul {
+    display: flex;
+    flex-flow: row;
+    background-color: var(--primary-colour);
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+  }
+  header .navbar ul li {
+    margin-bottom: unset;
+    color: unset;
+  }
+  header .navbar ul li a {
+    background-color: unset;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    border-radius: unset;
+    display: block;
+    letter-spacing: 0.15rem;
+  }
+  header .navbar ul li a:hover {
+    text-decoration: none;
+    background: none;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+  }
 }/*# sourceMappingURL=style.css.map */
