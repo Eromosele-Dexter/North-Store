@@ -32,6 +32,7 @@ function toggleHamburgerMenu() {
         $('.navbar').hide();
         $('.fa-bars').removeClass("fa-duotone fa-xmark");
     })
+    console.log("ham")
 }
 
 function mediaQuerying(mediaQuery) {

@@ -54,6 +54,7 @@ header {
         .right {
             display: flex;
             align-items: center;
+            justify-content: center;
             font-size: 2rem;
 
             .search-container {
@@ -90,6 +91,14 @@ header {
                         width: 25rem;
                     }
                 }
+            }
+
+            .shopping-cart {
+                display: block;
+                text-decoration: none;
+                color: white;
+                font-size: 2.5rem;
+                padding: 0.5rem;
             }
         }
     }
@@ -146,23 +155,84 @@ header {
     }
 }
 
+section#home {
+    .container {
+        display: grid;
+        grid-template-columns: 50fr 50fr;
 
-.fa-xmark {
 
-    z-index: 1001;
-    transform: translateX(27rem);
+        .hero-content {
 
+            h1 {
+                font-size: 3.5rem;
+                letter-spacing: 0.2rem;
+            }
 
+            p {
+                text-align: left;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                padding-right: 5rem;
+            }
+
+            .stars {
+                margin: 1rem 0;
+
+                .star {
+                    color: gold;
+                    font-size: 1.5rem;
+                }
+            }
+
+            h2 {
+                font-size: 2.8rem;
+                font-weight: normal;
+                color: #EB4D4B;
+                margin-bottom: 1rem;
+            }
+
+            button {
+                background-color: purple;
+                color: white;
+                padding: 1rem 2rem;
+                border: none;
+                border-radius: 5rem;
+                cursor: pointer;
+            }
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            margin-left: 10rem;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
 }
 
+
+.fa-xmark {
+    z-index: 1001;
+    transform: translateX(27rem);
+}
+
+
+
+
 @media only screen and(min-width: 1480px) {
+    .container {
+        width: 1400px;
+        margin: 0 auto;
+    }
+
     header {
         padding: 0rem 2rem;
 
-        .container {
-            width: 1400px;
-            margin: 0 auto;
-        }
+
 
         .fa-bars {
             display: none;
