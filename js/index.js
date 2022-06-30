@@ -2,6 +2,7 @@ $(document).ready(function () {
 
     toggleHamburgerMenu();
     homeCarousel();
+    productCarousel();
 
     var mediaQuery = window.matchMedia('(min-width: 1024px)')
     document.addEventListener('DOMContentLoaded', mediaQuerying)
@@ -58,4 +59,26 @@ function homeCarousel() {
         nav: true,
         items: 1
     })
+}
+
+function productCarousel() {
+    $('.product-slider').owlCarousel({
+        loop: true,
+        nav: true,
+        items: 3,
+        autoplay: false,
+        center: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    });
 }
