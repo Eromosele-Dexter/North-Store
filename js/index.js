@@ -3,7 +3,7 @@ $(document).ready(function () {
     toggleHamburgerMenu();
     homeCarousel();
 
-    var mediaQuery = window.matchMedia('(min-width: 1480px)')
+    var mediaQuery = window.matchMedia('(min-width: 1024px)')
     document.addEventListener('DOMContentLoaded', mediaQuerying)
     mediaQuerying(mediaQuery)
 
