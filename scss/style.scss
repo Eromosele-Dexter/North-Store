@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
     background: var(--primary-colour);
     color: white;
 }
@@ -156,15 +156,20 @@ header {
 }
 
 section#home {
-    .container {
+
+
+    .slide {
         display: grid;
         grid-template-columns: 50fr 50fr;
-
+        justify-content: center;
+        padding: 0rem 3.5rem;
+        margin-top: 3rem;
 
         .hero-content {
+            margin-top: 5rem;
 
             h1 {
-                font-size: 3.5rem;
+                font-size: 2.1rem;
                 letter-spacing: 0.2rem;
             }
 
@@ -172,7 +177,7 @@ section#home {
                 text-align: left;
                 font-size: 1.5rem;
                 line-height: 2rem;
-                padding-right: 5rem;
+                // padding-right: 5rem;
             }
 
             .stars {
@@ -180,31 +185,38 @@ section#home {
 
                 .star {
                     color: gold;
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                 }
             }
 
             h2 {
-                font-size: 2.8rem;
+                font-size: 1.8rem;
                 font-weight: normal;
                 color: #EB4D4B;
                 margin-bottom: 1rem;
             }
 
             button {
-                background-color: purple;
+                background-color: #4834D4;
+                // background-color: purple;
                 color: white;
-                padding: 1rem 2rem;
+                padding: 0.5rem 2rem;
                 border: none;
                 border-radius: 5rem;
                 cursor: pointer;
+
+                &:hover {
+                    background-color: #EB4D4B;
+                    font-weight: bold;
+                    letter-spacing: 0.1rem;
+                }
             }
         }
 
         .hero-image {
             width: 100%;
             height: 100%;
-            margin-left: 10rem;
+            margin-top: 2rem;
 
             img {
                 width: 100%;
@@ -212,6 +224,43 @@ section#home {
             }
         }
     }
+
+
+    .owl-nav {
+
+        .owl-next,
+        .owl-prev {
+            position: absolute;
+            color: #EB4D4B;
+            top: 45%;
+            transform: translateY(-50%);
+            font-size: 6rem;
+            background: none;
+        }
+
+        .owl-prev {
+            left: 0rem;
+        }
+
+        .owl-next {
+            right: 0rem;
+        }
+
+
+    }
+
+    .owl-dots {
+        position: absolute;
+        bottom: -15%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .active {
+            color: #EB4D4B;
+        }
+    }
+
+
 }
 
 
@@ -223,16 +272,17 @@ section#home {
 
 
 
+
 @media only screen and(min-width: 1480px) {
-    .container {
+
+    .container,
+    .slide {
         width: 1400px;
         margin: 0 auto;
     }
 
     header {
         padding: 0rem 2rem;
-
-
 
         .fa-bars {
             display: none;
@@ -247,8 +297,6 @@ section#home {
             height: unset;
             width: unset;
             display: block;
-
-
 
 
             ul {
@@ -287,5 +335,6 @@ section#home {
             }
 
         }
+
     }
 }

@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
     toggleHamburgerMenu();
+    homeCarousel();
 
     var mediaQuery = window.matchMedia('(min-width: 1480px)')
     document.addEventListener('DOMContentLoaded', mediaQuerying)
@@ -48,4 +49,13 @@ function mediaQuerying(mediaQuery) {
         console.log("else")
 
     }
+}
+
+function homeCarousel() {
+    $('.home-slider').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        items: 1
+    })
 }
