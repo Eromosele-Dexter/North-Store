@@ -45,6 +45,9 @@ header .container .logo {
 header .container .logo i {
   padding: 0.5rem;
 }
+header .container .logo:hover {
+  color: #EB4D4B;
+}
 header .container .right {
   display: flex;
   align-items: center;
@@ -88,6 +91,9 @@ header .container .right .shopping-cart {
   font-size: 2.5rem;
   padding: 0.5rem;
 }
+header .container .right .shopping-cart:hover {
+  color: #EB4D4B;
+}
 header .navbar {
   position: fixed;
   z-index: 1000;
@@ -127,6 +133,7 @@ header .navbar ul li a {
 header .navbar ul li a:hover {
   text-decoration: none;
   background: #EB4D4B;
+  font-weight: bold;
   letter-spacing: 0.15rem;
   color: #fff;
 }
