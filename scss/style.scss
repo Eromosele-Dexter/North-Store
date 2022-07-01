@@ -193,7 +193,7 @@ section#home {
                 text-align: left;
                 font-size: 1.1rem;
                 line-height: 2rem;
-                // padding-right: 5rem;
+
             }
 
             .stars {
@@ -319,6 +319,9 @@ section#product {
     .slide {
         border: 1px solid gray;
         margin-right: 7rem;
+        cursor: pointer;
+        position: relative;
+
 
         .product-image {
             width: 100%;
@@ -351,17 +354,27 @@ section#product {
         }
 
         &:hover {
-            cursor: pointer;
-            transform: scale(1);
+            .product-info {
+
+                transform: scale(1);
+            }
         }
+
     }
 
     .product-info {
+        position: absolute;
+        top: 0;
+        left: 0;
         background-color: #333;
         color: white;
         padding: 5rem 2rem;
         text-align: center;
         transform: scale(0);
+        height: 100%;
+        width: 100%;
+        transition-delay: .2s;
+
 
         h2 {
             margin-bottom: 1.5rem;
@@ -422,6 +435,8 @@ section#product {
 
 
     }
+
+
 }
 
 

@@ -258,6 +258,8 @@ section#product h4 {
 section#product .slide {
   border: 1px solid gray;
   margin-right: 7rem;
+  cursor: pointer;
+  position: relative;
 }
 section#product .slide .product-image {
   width: 100%;
@@ -280,16 +282,21 @@ section#product .slide .description p {
   font-size: 1.4rem;
   color: #EB4D4B;
 }
-section#product .slide:hover {
-  cursor: pointer;
+section#product .slide:hover .product-info {
   transform: scale(1);
 }
 section#product .product-info {
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: #333;
   color: white;
   padding: 5rem 2rem;
   text-align: center;
   transform: scale(0);
+  height: 100%;
+  width: 100%;
+  transition-delay: 0.2s;
 }
 section#product .product-info h2 {
   margin-bottom: 1.5rem;
