@@ -467,6 +467,65 @@ section#newsletter .container form button:hover {
   color: #EB4D4B;
 }
 
+footer {
+  padding: 5rem 0;
+  background-color: #333;
+  color: #fff;
+}
+footer .container {
+  text-align: center;
+}
+footer .container hr {
+  width: 100%;
+}
+footer .container .columns {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+footer .container .columns .column {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+footer .container .columns .column h2 {
+  color: #fff;
+  font-size: 2.4rem;
+  margin-bottom: 2.5rem;
+}
+footer .container .columns .column h2 i {
+  padding: 0 0.5rem;
+}
+footer .container .columns .column p {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+footer .container .columns .column a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+footer .container .columns .column a:hover {
+  font-style: italic;
+  color: #EB4D4B;
+}
+footer .container .columns .column.store {
+  max-width: 50%;
+}
+footer .container .copyright {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+footer .container .copyright span {
+  color: #EB4D4B;
+  font-size: 1.6rem;
+}
+
 @media only screen and (min-width: 500px) {
   header .navbar ul {
     padding-top: 15rem;
@@ -585,6 +644,42 @@ section#home .owl-nav .owl-prev {
   section#newsletter .container form input {
     width: 35rem;
   }
+
+  footer {
+    padding: 3.5rem 0;
+  }
+  footer .container {
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  footer .container hr {
+    width: 100%;
+  }
+  footer .container .columns {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+  footer .container .columns .column {
+    display: flex;
+    flex-flow: column;
+  }
+  footer .container .columns .column.store {
+    max-width: 25%;
+  }
+  footer .container .copyright {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+  }
+  footer .container .copyright span {
+    color: #EB4D4B;
+    font-size: 2.1rem;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .container,
@@ -651,6 +746,23 @@ section#home .owl-nav .owl-prev {
 
   section#home .slide .hero-content {
     padding-left: 2.1rem;
+  }
+
+  footer .container .columns .column h2 {
+    font-size: 2.8rem;
+  }
+  footer .container .columns .column p {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+  footer .container .columns .column a {
+    font-size: 1.8rem;
+  }
+  footer .container .copyright {
+    font-size: 2rem;
+  }
+  footer .container .copyright span {
+    font-size: 2.1rem;
   }
 }
 @media only screen and (min-width: 1440px) {
