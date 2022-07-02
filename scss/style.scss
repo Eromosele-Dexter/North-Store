@@ -467,7 +467,7 @@ section#offer {
     .container {
         h2 {
             color: #4834D4;
-            font-size: 2.4rem;
+            font-size: 3rem;
             font-weight: normal;
             position: relative;
             text-align: center;
@@ -486,22 +486,21 @@ section#offer {
         }
 
         .deals {
-            display: flex;
-            justify-content: space-around;
-
             .deal {
+                margin-bottom: 8rem;
+
                 h4 {
                     color: #EB4D4B;
                     text-align: center;
-                    font-size: 1.2rem;
+                    font-size: 2.8rem;
                 }
+
+
             }
         }
 
-        .deal-svg {
-            width: 10rem;
-            height: 10rem;
-        }
+
+
 
     }
 }
@@ -622,6 +621,34 @@ section#offer {
             .owl-next,
             .owl-prev {
                 font-size: 5rem;
+            }
+        }
+    }
+
+    section#offer {
+        padding: 0;
+        padding-top: 6rem;
+
+        .deals {
+            display: flex;
+            justify-content: space-around;
+
+            .deal {
+
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+
+                h4 {
+                    color: #EB4D4B;
+                    text-align: center;
+                    font-size: 2.1rem;
+                }
+
+                .deal-svg {
+                    width: 15rem;
+                    height: 16rem;
+                }
             }
         }
     }

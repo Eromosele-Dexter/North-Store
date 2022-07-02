@@ -372,7 +372,7 @@ section#offer {
 }
 section#offer .container h2 {
   color: #4834D4;
-  font-size: 2.4rem;
+  font-size: 3rem;
   font-weight: normal;
   position: relative;
   text-align: center;
@@ -388,18 +388,13 @@ section#offer .container h2::after {
   width: 20%;
   background: #EB4D4B;
 }
-section#offer .container .deals {
-  display: flex;
-  justify-content: space-around;
+section#offer .container .deals .deal {
+  margin-bottom: 8rem;
 }
 section#offer .container .deals .deal h4 {
   color: #EB4D4B;
   text-align: center;
-  font-size: 1.2rem;
-}
-section#offer .container .deal-svg {
-  width: 10rem;
-  height: 10rem;
+  font-size: 2.8rem;
 }
 
 @media only screen and (min-width: 500px) {
@@ -464,6 +459,29 @@ section#offer .container .deal-svg {
   section#home .owl-nav .owl-next,
 section#home .owl-nav .owl-prev {
     font-size: 5rem;
+  }
+
+  section#offer {
+    padding: 0;
+    padding-top: 6rem;
+  }
+  section#offer .deals {
+    display: flex;
+    justify-content: space-around;
+  }
+  section#offer .deals .deal {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  section#offer .deals .deal h4 {
+    color: #EB4D4B;
+    text-align: center;
+    font-size: 2.1rem;
+  }
+  section#offer .deals .deal .deal-svg {
+    width: 15rem;
+    height: 16rem;
   }
 }
 @media only screen and (min-width: 1024px) {
