@@ -292,6 +292,7 @@ section#home {
 #product {
     background-color: white;
     color: #4834D4;
+    padding-bottom: 8rem;
 
     .container {
         display: flex;
@@ -459,6 +460,51 @@ section#home {
     }
 }
 
+section#offer {
+    background-color: rgb(249, 243, 243);
+    padding: 6rem 0;
+
+    .container {
+        h2 {
+            color: #4834D4;
+            font-size: 2.4rem;
+            font-weight: normal;
+            position: relative;
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 0.3rem;
+            width: 20%;
+            background: #EB4D4B;
+        }
+
+        .deals {
+            display: flex;
+            justify-content: space-around;
+
+            .deal {
+                h4 {
+                    color: #EB4D4B;
+                    text-align: center;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .deal-svg {
+            width: 10rem;
+            height: 10rem;
+        }
+
+    }
+}
 
 
 
