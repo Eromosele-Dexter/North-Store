@@ -249,6 +249,7 @@ section#home .owl-dots .active {
   padding-top: 5rem;
   margin: 2rem 0;
   position: relative;
+  font-weight: normal;
 }
 #product .heading::after {
   content: "";
@@ -410,6 +411,62 @@ section#brand .container .brands .brand .brand-svg {
   height: 16rem;
 }
 
+section#newsletter {
+  padding: 5rem 8rem;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 255, 0.4), rgba(0, 0, 255, 0.4)), url(../images/hand-painted-watercolor-background-with-sky-clouds-shape.jpg) no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+section#newsletter .container form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+}
+section#newsletter .container form h1 {
+  font-size: 5rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+section#newsletter .container form h2 {
+  font-size: 2.1rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 3.5rem;
+  font-weight: normal;
+}
+section#newsletter .container form input {
+  background-color: #333;
+  color: #ccc;
+  width: 30rem;
+  height: 4rem;
+  border-radius: 5rem;
+  outline: none;
+  border: none;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+section#newsletter .container form input::placeholder {
+  color: #ccc;
+}
+section#newsletter .container form button {
+  display: block;
+  border-radius: 5rem;
+  background-color: #EB4D4B;
+  border: none;
+  outline: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+section#newsletter .container form button:hover {
+  background-color: #fff;
+  font-weight: bold;
+  color: #EB4D4B;
+}
+
 @media only screen and (min-width: 500px) {
   header .navbar ul {
     padding-top: 15rem;
@@ -483,6 +540,9 @@ section#home .owl-nav .owl-prev {
     padding: 0;
     padding-top: 6rem;
   }
+  section#offer .container h2 {
+    font-size: 4rem;
+  }
   section#offer .deals {
     display: flex;
     justify-content: space-around;
@@ -510,6 +570,20 @@ section#home .owl-nav .owl-prev {
   section#brand .container .brands .brand .brand-svg {
     width: 11.5rem;
     height: 14rem;
+  }
+
+  section#newsletter .container form h1 {
+    font-size: 6rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.5rem;
+  }
+  section#newsletter .container form h2 {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.5rem;
+  }
+  section#newsletter .container form input {
+    width: 35rem;
   }
 }
 @media only screen and (min-width: 1024px) {

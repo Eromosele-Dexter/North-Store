@@ -309,6 +309,7 @@ section#home {
         padding-top: 5rem;
         margin: 2rem 0;
         position: relative;
+        font-weight: normal;
 
         &::after {
             content: '';
@@ -524,6 +525,71 @@ section#brand {
     }
 }
 
+section#newsletter {
+    padding: 5rem 8rem;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 255, 0.4), rgba(0, 0, 255, 0.4)), url(../images/hand-painted-watercolor-background-with-sky-clouds-shape.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    .container {
+        form {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            text-align: center;
+
+            h1 {
+                font-size: 5rem;
+                letter-spacing: 0.1rem;
+                margin-bottom: 0.5rem;
+            }
+
+            h2 {
+                font-size: 2.1rem;
+                letter-spacing: 0.1rem;
+                margin-bottom: 3.5rem;
+                font-weight: normal;
+            }
+
+            input {
+                background-color: #333;
+                color: #ccc;
+                width: 30rem;
+                height: 4rem;
+                border-radius: 5rem;
+                outline: none;
+                border: none;
+                padding: 1.5rem;
+                margin-bottom: 3rem;
+                font-size: 1.5rem;
+
+                &::placeholder {
+                    color: #ccc;
+                    ;
+                }
+            }
+
+            button {
+                display: block;
+                border-radius: 5rem;
+                background-color: #EB4D4B;
+                border: none;
+                outline: none;
+                padding: 1rem 2.5rem;
+                font-size: 1.8rem;
+                color: #fff;
+
+                &:hover {
+                    background-color: #fff;
+                    font-weight: bold;
+                    color: #EB4D4B;
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -663,6 +729,10 @@ section#brand {
         padding: 0;
         padding-top: 6rem;
 
+        .container h2 {
+            font-size: 4rem;
+        }
+
         .deals {
             display: flex;
             justify-content: space-around;
@@ -704,6 +774,32 @@ section#brand {
             }
         }
     }
+
+    section#newsletter {
+        .container {
+            form {
+                h1 {
+                    font-size: 6rem;
+                    letter-spacing: 0.1rem;
+                    margin-bottom: 0.5rem;
+                }
+
+                h2 {
+                    font-size: 3rem;
+                    letter-spacing: 0.1rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                input {
+                    width: 35rem;
+                }
+
+
+            }
+        }
+    }
+
+
 }
 
 
