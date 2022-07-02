@@ -397,6 +397,19 @@ section#offer .container .deals .deal h4 {
   font-size: 2.8rem;
 }
 
+section#brand {
+  padding: 5rem 0;
+}
+section#brand .container .brands {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+section#brand .container .brands .brand .brand-svg {
+  width: 15rem;
+  height: 16rem;
+}
+
 @media only screen and (min-width: 500px) {
   header .navbar ul {
     padding-top: 15rem;
@@ -421,6 +434,11 @@ section#offer .container .deals .deal h4 {
 
   section#product .product-container h4 {
     margin: 3rem auto;
+  }
+
+  section#brand .container .brands .brand .brand-svg {
+    width: 20rem;
+    height: 18rem;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -482,6 +500,16 @@ section#home .owl-nav .owl-prev {
   section#offer .deals .deal .deal-svg {
     width: 15rem;
     height: 16rem;
+  }
+
+  section#brand .container .brands {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+  }
+  section#brand .container .brands .brand .brand-svg {
+    width: 11.5rem;
+    height: 14rem;
   }
 }
 @media only screen and (min-width: 1024px) {

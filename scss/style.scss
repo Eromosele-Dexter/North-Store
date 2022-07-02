@@ -505,6 +505,25 @@ section#offer {
     }
 }
 
+section#brand {
+    padding: 5rem 0;
+
+    .container {
+        .brands {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+
+            .brand {
+                .brand-svg {
+                    width: 15rem;
+                    height: 16rem;
+                }
+            }
+        }
+    }
+}
+
 
 
 
@@ -555,6 +574,21 @@ section#offer {
         .product-container {
             h4 {
                 margin: 3rem auto;
+            }
+        }
+    }
+
+    section#brand {
+
+        .container {
+            .brands {
+
+                .brand {
+                    .brand-svg {
+                        width: 20rem;
+                        height: 18rem;
+                    }
+                }
             }
         }
     }
@@ -652,7 +686,27 @@ section#offer {
             }
         }
     }
+
+    section#brand {
+
+        .container {
+            .brands {
+                display: flex;
+                flex-flow: row;
+                justify-content: space-around;
+
+                .brand {
+                    .brand-svg {
+                        width: 11.5rem;
+                        height: 14rem;
+                    }
+                }
+            }
+        }
+    }
 }
+
+
 
 
 @media only screen and(min-width: 1024px) {
