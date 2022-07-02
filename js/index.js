@@ -57,6 +57,7 @@ function homeCarousel() {
         loop: true,
         margin: 10,
         nav: true,
+        autoplay: true,
         items: 1
     })
 }
@@ -64,20 +65,22 @@ function homeCarousel() {
 function productCarousel() {
     $('.product-slider').owlCarousel({
         loop: true,
-        nav: true,
+        nav: false,
         items: 3,
-        autoplay: false,
-        center: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        responsiveClass: true,
         responsive: {
             0: {
                 items: 1,
-                nav: true
             },
             600: {
                 items: 2
+
             },
             1000: {
-                items: 3
+                items: 3,
+                center: true
             }
         }
     });
