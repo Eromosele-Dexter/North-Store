@@ -34,20 +34,18 @@ function toggleHamburgerMenu() {
         $('.navbar').hide();
         $('.fa-bars').removeClass("fa-duotone fa-xmark");
     })
-    console.log("ham")
+
 }
 
 function mediaQuerying(mediaQuery) {
     if (mediaQuery.matches) {
         $("#search-bar, .fa-magnifying-glass").mouseenter(function () {
             $(".logo").off("mouseenter");
-            console.log("if")
         });
 
 
     } else {
         togggleLogoView();
-        console.log("else")
 
     }
 }

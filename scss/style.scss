@@ -214,8 +214,9 @@ section#home {
                 margin-bottom: 1rem;
             }
 
-            button {
+            a {
                 background-color: #4834D4;
+                text-decoration: none;
                 // background-color: purple;
                 color: white;
                 padding: 0.6rem 1.5rem;
@@ -225,12 +226,14 @@ section#home {
                 font-size: 1.2rem;
 
 
-                &:hover {
-                    background-color: #EB4D4B;
-                    font-weight: bold;
-                    letter-spacing: 0.1rem;
-                }
+
             }
+
+            // a:hover {
+            //     background-color: #EB4D4B;
+            //     font-weight: bold;
+            //     letter-spacing: 0.1rem;
+            // }
         }
 
         .hero-image {
@@ -705,7 +708,7 @@ footer {
                     font-size: 1.8rem;
                 }
 
-                button {
+                a {
                     padding: 0.6rem 1.8rem;
                 }
             }
@@ -784,7 +787,7 @@ footer {
                     }
                 }
 
-                button {
+                a {
                     font-size: 1.4rem;
                 }
             }

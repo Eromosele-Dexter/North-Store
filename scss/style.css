@@ -179,19 +179,15 @@ section#home .slide .hero-content h2 {
   color: #EB4D4B;
   margin-bottom: 1rem;
 }
-section#home .slide .hero-content button {
+section#home .slide .hero-content a {
   background-color: #4834D4;
+  text-decoration: none;
   color: white;
   padding: 0.6rem 1.5rem;
   border: none;
   border-radius: 5rem;
   cursor: pointer;
   font-size: 1.2rem;
-}
-section#home .slide .hero-content button:hover {
-  background-color: #EB4D4B;
-  font-weight: bold;
-  letter-spacing: 0.1rem;
 }
 section#home .slide .hero-image {
   width: 100%;
@@ -544,7 +540,7 @@ footer .container .copyright span {
   section#home .slide .hero-content h2 {
     font-size: 1.8rem;
   }
-  section#home .slide .hero-content button {
+  section#home .slide .hero-content a {
     padding: 0.6rem 1.8rem;
   }
 
@@ -587,7 +583,7 @@ footer .container .copyright span {
   section#home .slide .hero-content .stars .star {
     font-size: 1.8rem;
   }
-  section#home .slide .hero-content button {
+  section#home .slide .hero-content a {
     font-size: 1.4rem;
   }
   section#home .owl-nav .owl-next,
