@@ -1,2 +1,3 @@
 # North-Store WebProject
-E-coomerce store using HTML, CSS and vanilla Js
+E-commerce store using HTML, CSS, vanilla Js and a plugin called owl carousel 2.
+No Backend.
